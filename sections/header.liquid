@@ -1,7 +1,7 @@
 {% assign main_menu_linklist = linklists[section.settings.menu].links %}
 {{shop.customer_accounts_enabled}}
 
-<div class="relative bg-white" x-data="{ mobileMenuOpen: true }">
+<div class="relative bg-white" x-data="{ mobileMenuOpen: false }">
 
   <div class="mx-auto px-4 sm:px-6">
     <div class="flex justify-between items-center py-6 md:justify-start md:space-x-10">
@@ -11,7 +11,7 @@
       </div>
 
       <div class="-mr-2 -my-2 ml-3 md:hidden">
-    <button x-on:click="mobileMenuOpen = false" type="button" class="bg-white p-2 inline-flex items-center justify-center focus:outline-none">
+    <button x-on:click="mobileMenuOpen = true" type="button" class="bg-white p-2 inline-flex items-center justify-center focus:outline-none">
         {% render 'icon-menu' %}
     </button>
 </div>
